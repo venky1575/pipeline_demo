@@ -33,7 +33,8 @@ pipeline {
                         stage('Integration test') {
                         agent {
                                 docker {
-                                        reuseNode false
+                                        reuseNode true
+
 					image 'ubuntu'
                                         }
 			}
