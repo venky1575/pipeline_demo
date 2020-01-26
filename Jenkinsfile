@@ -32,10 +32,8 @@ pipeline {
                         }
                         stage('Integration test') {
                         agent {
-                                docker {
-                                        reuseNode true
-
-					image 'ubuntu'
+                                steps {
+                                        echo 'hello venky'
                                         }
 			}
 				steps {
